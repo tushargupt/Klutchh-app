@@ -1,20 +1,29 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image, TouchableOpacity, Modal, ScrollView, Dimensions } from 'react-native';
+import { AntDesign } from '@expo/vector-icons';
+import Card from './components/Card';
+import PlayerCard from './components/PlayerCard';
+import { Component } from 'react';
+import Load from './components/Load';
 
 export default function App() {
+
+
   return (
+
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <Load />
+      <StatusBar style="light" />
     </View>
+
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: '#211134',
+    //alignItems: 'center',
+    //justifyContent: 'center',
   },
 });
